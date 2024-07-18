@@ -4,49 +4,95 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Abhirupa Ghosh - Computational Biologist</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #f7f7f7;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
         header {
-            background-color: #4CAF50;
-            color: white;
-            padding: 1rem 0;
+            background-color: #A3D5C3;
+            color: #333;
+            padding: 2rem 0;
             text-align: center;
+            width: 100%;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
         main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            max-width: 1200px;
             padding: 2rem;
+            gap: 2rem;
         }
         section {
-            margin-bottom: 2rem;
+            background: white;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            flex: 1;
+            min-width: 300px;
+            max-width: 48%;
         }
         h2 {
-            border-bottom: 2px solid #4CAF50;
+            border-bottom: 2px solid #A3D5C3;
             padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 0.5rem;
         }
         a {
-            color: #4CAF50;
+            color: #A3D5C3;
             text-decoration: none;
         }
         a:hover {
             text-decoration: underline;
         }
+        .icon {
+            margin-right: 0.5rem;
+            color: #A3D5C3;
+        }
+        .contact-info a {
+            display: block;
+            margin-bottom: 0.5rem;
+        }
     </style>
 </head>
 <body>
     <header>
-        <h1>Abhirupa Ghosh - Computational Biologist</h1>
+        <h1>A - Computational Biologist</h1>
     </header>
     <main>
         <section id="about">
-            <h2>About Me</h2>
-            <p> I am a computational biologist with a keen interest in using computational methods to solve complex biological problems. With a strong background in bioinformatics, machine learning, and data analysis, Abhirupa is dedicated to advancing the field through innovative research and collaboration.</p>
+            <h2><i class="fas fa-user icon"></i>About Me</h2>
+            <p>Abhirupa is a passionate computational biologist with a keen interest in using computational methods to solve complex biological problems. With a strong background in bioinformatics, machine learning, and data analysis, she is dedicated to advancing the field through innovative research and collaboration.</p>
+        </section>
+        <section id="work">
+            <h2><i class="fas fa-briefcase icon"></i>Place of Work</h2>
+            <p><strong>Current Position:</strong> [Your Current Position]</p>
+            <p><strong>Institution/Organization:</strong> [Your Institution or Organization]</p>
+        </section>
+        <section id="education">
+            <h2><i class="fas fa-graduation-cap icon"></i>Education</h2>
+            <ul>
+                <li>[Your Degree] in [Your Field], [Your University], [Year]</li>
+                <li>[Your Degree] in [Your Field], [Your University], [Year]</li>
+            </ul>
         </section>
         <section id="research">
-            <h2>Research Interests</h2>
+            <h2><i class="fas fa-flask icon"></i>Research Interests</h2>
             <ul>
                 <li>Genomic data analysis</li>
                 <li>Machine learning applications in biology</li>
@@ -56,30 +102,32 @@
             </ul>
         </section>
         <section id="projects">
-            <h2>Projects</h2>
+            <h2><i class="fas fa-project-diagram icon"></i>Projects</h2>
             <h3>Project Title 1</h3>
             <p>Brief description of the project and its goals.</p>
-            <p><a href="#">GitHub Repository</a></p>
+            <p><a href="#"><i class="fab fa-github icon"></i>GitHub Repository</a></p>
             <h3>Project Title 2</h3>
             <p>Brief description of the project and its goals.</p>
-            <p><a href="#">GitHub Repository</a></p>
+            <p><a href="#"><i class="fab fa-github icon"></i>GitHub Repository</a></p>
             <h3>Project Title 3</h3>
             <p>Brief description of the project and its goals.</p>
-            <p><a href="#">GitHub Repository</a></p>
+            <p><a href="#"><i class="fab fa-github icon"></i>GitHub Repository</a></p>
         </section>
         <section id="publications">
-            <h2>Publications</h2>
+            <h2><i class="fas fa-book icon"></i>Publications</h2>
             <ul>
-                <li><a href="#">Title of Publication 1</a>: Brief description or abstract.</li>
-                <li><a href="#">Title of Publication 2</a>: Brief description or abstract.</li>
-                <li><a href="#">Title of Publication 3</a>: Brief description or abstract.</li>
+                <li><a href="#"><i class="fas fa-file-alt icon"></i>Title of Publication 1</a>: Brief description or abstract.</li>
+                <li><a href="#"><i class="fas fa-file-alt icon"></i>Title of Publication 2</a>: Brief description or abstract.</li>
+                <li><a href="#"><i class="fas fa-file-alt icon"></i>Title of Publication 3</a>: Brief description or abstract.</li>
             </ul>
         </section>
         <section id="contact">
-            <h2>Contact Information</h2>
-            <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
-            <p>LinkedIn: <a href="#">LinkedIn Profile</a></p>
-            <p>Twitter: <a href="#">Twitter Profile</a></p>
+            <h2><i class="fas fa-envelope icon"></i>Contact Information</h2>
+            <div class="contact-info">
+                <a href="mailto:your.email@example.com"><i class="fas fa-envelope icon"></i>Email: your.email@example.com</a>
+                <a href="#"><i class="fab fa-linkedin icon"></i>LinkedIn Profile</a>
+                <a href="#"><i class="fab fa-twitter icon"></i>Twitter Profile</a>
+            </div>
         </section>
     </main>
 </body>
