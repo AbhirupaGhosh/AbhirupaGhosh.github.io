@@ -3,132 +3,313 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abhirupa Ghosh - Computational Biologist</title>
+    <title>Abhirupa Ghosh | CV</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
-        body {
-            font-family: 'Arial', sans-serif;
+        /* Basic Reset */
+        * {
             margin: 0;
             padding: 0;
-            background-color: #f7f7f7;
-            color: #333;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background: linear-gradient(180deg, #FFE6CC, #FFFFE0); /* Gradient from pastel orange to yellow */
+            min-height: 100vh;
             display: flex;
             flex-direction: column;
-            align-items: center;
         }
+
         header {
-            background-color: #A3D5C3;
-            color: #333;
-            padding: 2rem 0;
+            background: linear-gradient(135deg, #FFAB91, #FFE57F); /* Pastel shades of orange to yellow */
+            color: white;
+            padding: 20px 0;
             text-align: center;
-            width: 100%;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
-        main {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            max-width: 1200px;
-            padding: 2rem;
-            gap: 2rem;
+
+        header h1 {
+            margin: 0;
         }
-        section {
-            background: white;
-            padding: 1rem;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            flex: 1;
-            min-width: 300px;
-            max-width: 48%;
+
+        header h2 {
+            margin: 0;
+            font-size: 1.2em;
         }
-        h2 {
-            border-bottom: 2px solid #A3D5C3;
-            padding-bottom: 0.5rem;
-            margin-bottom: 1rem;
-        }
-        ul {
-            list-style-type: none;
+
+        nav ul {
+            list-style: none;
             padding: 0;
         }
-        li {
-            margin-bottom: 0.5rem;
+
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
         }
-        a {
-            color: #A3D5C3;
+
+        nav ul li a {
+            color: white;
             text-decoration: none;
+            font-weight: bold;
         }
-        a:hover {
+
+        nav ul li a:hover {
             text-decoration: underline;
         }
-        .icon {
-            margin-right: 0.5rem;
-            color: #A3D5C3;
+
+        main {
+            padding: 20px;
+            flex: 1; /* Allows the main content to grow and fill the available space */
         }
-        .contact-info a {
-            display: block;
-            margin-bottom: 0.5rem;
+
+        section {
+            margin-bottom: 20px;
+        }
+
+        section h2 {
+            border-bottom: 2px solid #FFAB91;
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
+
+        .education, .experience, .skills, .tools, .awards {
+            background-color: #FFEFE6; /* Lighter version of background color */
+            border: 1px solid #FFC0A1; /* Lighter border */
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        .experience {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .experience > div {
+            flex: 1;
+            min-width: calc(50% - 10px); /* Two boxes side by side */
+            background-color: #FFFFF0; /* Transparent box */
+            border: 1px solid #FFDAB9;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        footer {
+            background: #FFAB91; /* Same pastel orange */
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        footer a {
+            color: #FFFFE0; /* Pastel yellow */
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        .fas {
+            margin-right: 10px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            nav ul {
+                text-align: center;
+                padding: 0;
+            }
+
+            nav ul li {
+                display: block;
+                margin-bottom: 10px;
+            }
+
+            .experience > div {
+                min-width: 100%; /* Stack experience boxes vertically on small screens */
+            }
         }
     </style>
 </head>
 <body>
+    <!-- Header -->
     <header>
-        <h1>Abhirupa Ghosh - Computational Biologist</h1>
+        <div class="header-content">
+            <h1>Abhirupa Ghosh</h1>
+            <h2>Postdoctoral Fellow, Biomedical Informatics</h2>
+            <p>University of Colorado | Anschutz Medical Campus</p>
+            <p>Center for Health Artificial Intelligence</p>
+            <p>1890 N. Revere Ct. Aurora, Colorado - 80045</p>
+            <p>Email: <a href="mailto:abhirupa.ghosh@cuanschutz.edu">abhirupa.ghosh@cuanschutz.edu</a></p>
+            <nav>
+                <ul>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#research-experience">Research Experience</a></li>
+                    <li><a href="#publications">Publications</a></li>
+                    <li><a href="#tools">Tools & Databases</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#awards">Awards</a></li>
+                    <li><a href="#conferences">Conferences</a></li>
+                    <li><a href="#workshops">Workshops & Courses</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
+
+    <!-- Main Content -->
     <main>
+        <!-- About Me -->
         <section id="about">
-            <h2><i class="fas fa-user icon"></i>About Me</h2>
-            <p>Abhirupa is a passionate computational biologist with a keen interest in using computational methods to solve complex biological problems. With a strong background in bioinformatics, machine learning, and data analysis, she is dedicated to advancing the field through innovative research and collaboration.</p>
+            <h2>About Me</h2>
+            <p>My research interest involves integrating microbial and host multi-omics data along with mathematical modeling to unravel complex interactions between microbes, human health, and the environment. I ultimately aim to contribute to the one health approach for enhanced disease surveillance and control.</p>
         </section>
-        <section id="work">
-            <h2><i class="fas fa-briefcase icon"></i>Place of Work</h2>
-            <p><strong>Current Position:</strong> [Your Current Position]</p>
-            <p><strong>Institution/Organization:</strong> [Your Institution or Organization]</p>
-        </section>
+
+        <!-- Education -->
         <section id="education">
-            <h2><i class="fas fa-graduation-cap icon"></i>Education</h2>
-            <ul>
-                <li>[Your Degree] in [Your Field], [Your University], [Year]</li>
-                <li>[Your Degree] in [Your Field], [Your University], [Year]</li>
-            </ul>
+            <h2>Education</h2>
+            <div class="education">
+                <ul>
+                    <li><i class="fas fa-graduation-cap"></i><strong>PhD, Biophysics, Molecular Biology and Bioinformatics</strong><br>University of Calcutta (Work done at Bose Institute under Dr. Sudipto Saha)<br>2017 – Present</li>
+                    <li><i class="fas fa-graduation-cap"></i><strong>MTech, Bioinformatics</strong><br>Maulana Abul Kalam Azad University of Technology, WB, Kolkata (CGPA – 8.38/10)<br>2014 – 2016</li>
+                    <li><i class="fas fa-graduation-cap"></i><strong>BTech, Biotechnology</strong><br>Haldia Institute of Technology, affiliated to West Bengal University of Technology, Kolkata (CGPA – 8.52/10)<br>2010 – 2014</li>
+                </ul>
+            </div>
         </section>
-        <section id="research">
-            <h2><i class="fas fa-flask icon"></i>Research Interests</h2>
-            <ul>
-                <li>Genomic data analysis</li>
-                <li>Machine learning applications in biology</li>
-                <li>Systems biology</li>
-                <li>Computational drug discovery</li>
-                <li>Biological network analysis</li>
-            </ul>
+
+        <!-- Research Experience -->
+        <section id="research-experience">
+            <h2>Research Experience</h2>
+            <div class="experience">
+                <div>
+                    <h3>Postdoctoral Research</h3>
+                    <p><strong>CU Anschutz</strong><br>Supervisor: Dr. Janani Ravi<br>May 2024 – Present</p>
+                </div>
+                <div>
+                    <h3>Doctoral Research</h3>
+                    <p><strong>Bose Institute</strong><br>Supervisor: Dr. Sudipto Saha<br>May 2017 – May 2024<br>Thesis Title: “In-silico Analyses Of Drug-Resistant Gene-Mutations in Mycobacterium tuberculosis, ESKAPE And Other Bacterial Species.”</p>
+                    <ul>
+                        <li>Developed a database of drug-resistant gene mutations across bacterial species.</li>
+                        <li>Studied the evolution and molecular effects of drug-resistant gene mutations.</li>
+                        <li>Developed a machine learning-based prediction model for drug-resistant tuberculosis.</li>
+                        <li>Studied the taxonomic and functional signatures along with drug-resistant gene-mutation patterns in the human microbiome.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>MTech Project</h3>
+                    <p><strong>Bose Institute</strong><br>Supervisor: Dr. Sudipto Saha<br>July 2015 – June 2016<br>Thesis Title: “Prediction of Potential Small Chemical Protein-Protein Interaction Modulators against Bcl2-Bax using Machine Learning Techniques”</p>
+                    <ul>
+                        <li>Developed machine learning-based high-throughput screening of small molecules for targeting the protein-protein interaction Bcl2/Bak.</li>
+                        <li>Validated the screened molecules using Protein-ligand docking.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>BTech Project</h3>
+                    <p><strong>Haldia Institute of Technology</strong><br>Supervisor: Dr. Tarun Kanti Mandal<br>August 2013 – April 2014<br>Thesis Title: “Designed Ligands as Probe for Podophyllotoxin Binding Site of Tubulin”</p>
+                    <ul>
+                        <li>Designed and docked molecules to Tubulin protein at target site using AutoDock.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Summer Project</h3>
+                    <p><strong>University of Kalyani</strong><br>Supervisor: Dr. Angshuman Bagchi<br>May 2013 – June 2013<br>Thesis Title: “Identification and Characterization of DsrK Protein from its
+                    <h3>Summer Project</h3>
+                    <p><strong>University of Kalyani</strong><br>Supervisor: Dr. Angshuman Bagchi<br>May 2013 – June 2013<br>Thesis Title: “Identification and Characterization of DsrK Protein from its Gene Sequence in a Metagenomic Library”</p>
+                    <ul>
+                        <li>Cloned and expressed the DsrK protein.</li>
+                        <li>Characterized the protein using various biochemical techniques.</li>
+                    </ul>
+                </div>
+            </div>
         </section>
-        <section id="projects">
-            <h2><i class="fas fa-project-diagram icon"></i>Projects</h2>
-            <h3>Project Title 1</h3>
-            <p>Brief description of the project and its goals.</p>
-            <p><a href="#"><i class="fab fa-github icon"></i>GitHub Repository</a></p>
-            <h3>Project Title 2</h3>
-            <p>Brief description of the project and its goals.</p>
-            <p><a href="#"><i class="fab fa-github icon"></i>GitHub Repository</a></p>
-            <h3>Project Title 3</h3>
-            <p>Brief description of the project and its goals.</p>
-            <p><a href="#"><i class="fab fa-github icon"></i>GitHub Repository</a></p>
-        </section>
+
+        <!-- Publications -->
         <section id="publications">
-            <h2><i class="fas fa-book icon"></i>Publications</h2>
+            <h2>Publications</h2>
+            <p>14 research articles, 1 review, 2 book chapters</p>
             <ul>
-                <li><a href="#"><i class="fas fa-file-alt icon"></i>Title of Publication 1</a>: Brief description or abstract.</li>
-                <li><a href="#"><i class="fas fa-file-alt icon"></i>Title of Publication 2</a>: Brief description or abstract.</li>
-                <li><a href="#"><i class="fas fa-file-alt icon"></i>Title of Publication 3</a>: Brief description or abstract.</li>
+                <li><a href="https://scholar.google.com/citations?user=your-google-scholar-id" target="_blank">Google Scholar</a></li>
+                <li><a href="https://www.researchgate.net/profile/Abhirupa-Ghosh" target="_blank">ResearchGate</a></li>
+                <li><a href="https://orcid.org/0000-0001-2345-6789" target="_blank">ORCID</a></li>
             </ul>
         </section>
-        <section id="contact">
-            <h2><i class="fas fa-envelope icon"></i>Contact Information</h2>
-            <div class="contact-info">
-                <a href="mailto:your.email@example.com"><i class="fas fa-envelope icon"></i>Email: your.email@example.com</a>
-                <a href="#"><i class="fab fa-linkedin icon"></i>LinkedIn Profile</a>
-                <a href="#"><i class="fab fa-twitter icon"></i>Twitter Profile</a>
+
+        <!-- Tools & Databases -->
+        <section id="tools">
+            <h2>Tools & Databases</h2>
+            <div class="tools">
+                <ul>
+                    <li><i class="fas fa-database"></i>MCDR-MTB</li>
+                    <li><i class="fas fa-database"></i>PPIMpred</li>
+                    <li><i class="fas fa-database"></i>MDPD</li>
+                    <li><i class="fas fa-database"></i>BCSCdb</li>
+                    <li><i class="fas fa-database"></i>DRAGdb</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Skills -->
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="skills">
+                <ul>
+                    <li><i class="fas fa-code"></i> R, PERL, Python, Shell scripting, MySQL, HTML, PHP, CSS</li>
+                    <li><i class="fas fa-microscope"></i> Whole genome sequencing, Metagenomics, Transcriptomics, MinION sequencing</li>
+                    <li><i class="fas fa-cogs"></i> Sequence alignment, Protein-ligand Docking, Molecular Dynamics Simulation, Machine Learning Algorithms, Pathway and Network analysis</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Awards -->
+        <section id="awards">
+            <h2>Awards</h2>
+            <div class="awards">
+                <ul>
+                    <li><i class="fas fa-trophy"></i> First Prize at the 20th PULMOCON</li>
+                    <li><i class="fas fa-trophy"></i> Best Poster (Bronze) and Travel Fellowship at the 18th InCoB</li>
+                    <li><i class="fas fa-trophy"></i> 30th Rank in Bioinformatics National Certification (BINC)</li>
+                    <li><i class="fas fa-trophy"></i> 3rd Rank in MTech Bioinformatics from MAKAUT, WB</li>
+                    <li><i class="fas fa-trophy"></i> Best oral presentation at PRAYUKTI'14</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Conferences & Workshops -->
+        <section id="conferences">
+            <h2>Conferences & Workshops</h2>
+            <div class="conferences">
+                <ul>
+                    <li><i class="fas fa-calendar-day"></i> Various conferences including PULMOCON, InCoB, and Health Informatics Summit</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Workshops & Courses -->
+        <section id="workshops">
+            <h2>Workshops & Courses</h2>
+            <div class="workshops">
+                <ul>
+                    <li><i class="fas fa-chalkboard-teacher"></i> NIBMG Summer School on Systems Biology</li>
+                    <li><i class="fas fa-chalkboard-teacher"></i> DAT204x: Introduction to R Programming by Microsoft Corporation through edX</li>
+                </ul>
             </div>
         </section>
     </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Abhirupa Ghosh. All rights reserved.</p>
+    </footer>
 </body>
 </html>
